@@ -1,0 +1,514 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.leanhduc.pro.vn/utilities/animation/shake-effect/style.css"/>
+
+<style>
+    h1{
+        font-size: 30px;
+    }
+    .title {
+        text-align: center;
+        display: inline-block;
+      color: #5CA17C; /*non-webkit fallback*/
+      text-transform: uppercase;
+       background-image: linear-gradient(to bottom, #ff5500, #9500f8, #f1d500, #1ef701);
+      background-size: auto 250%;
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 50px;
+      background-position: 0 100%;
+    }
+    
+ .title:hover {
+      background-position: 0 0;
+      cursor: pointer;
+ }
+
+
+    .begin{
+        text-align: center;
+        
+      color: #5CA17C; /*non-webkit fallback*/
+      text-transform: uppercase;
+       background-image: linear-gradient(to bottom, #ff5500, #9500f8, #f1d500, #1ef701);
+      background-size: auto 250%;
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 50px;
+      background-position: 0 100%;
+
+    }
+    body {
+        background-image: url("image/background.png");
+        background-repeat: none;
+    }
+    .logo {
+display: inline-block;
+width: 40%;
+    }
+.image
+{
+    text-align: center;
+}
+.button-27
+{ 
+  appearance: none;
+  background-color: #10a535;
+  border: 2px solid #10a535;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 150px;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+
+.alight-button{
+    
+    text-align: center;
+    padding-top: 20px;  
+  }
+  .test2{
+    display: none;
+  }
+  .test1{
+    display: none;
+  }
+  .test {
+text-align: center;
+width:50%;
+  }
+  .box1 { 
+     background-color: rgb(24, 50, 218);
+  border: 2px solid rgb(24, 50, 218);
+   color: rgb(4, 4, 4);
+}
+.box2 {
+    background-color: rgb(11, 175, 190);
+  border: 2px solid rgb(10, 214, 233);
+   color: rgb(4, 4, 4);
+}
+.box3 {
+    background-color: rgb(162, 10, 233);
+  border: 2px solid rgb(162, 10, 233);
+   color: rgb(4, 4, 4);
+}
+.box4 {
+    background-color: rgb(236, 21, 226);
+  border: 2px solid rgb(236, 21, 226);
+   color: rgb(4, 4, 4);  
+}
+  .button-59 {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 100%;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.retry {
+  display: none;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+.next {
+    display: none;
+    text-align: center;
+}
+.retry:hover{
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+ color:black!important;
+}
+.retrydiv {
+    display: none;
+}
+.retry:hover {
+  transform: translateY(-1px);
+}
+
+.retry:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: rgb(255, 242, 0);
+  color:rgb(231, 237, 234);
+  fill: rgb(0, 255, 119);
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+.Padding {
+    padding-top:10px;
+}
+
+</style>
+<script>
+    function next1() {
+    document.getElementById("test1").style.display = 'none';
+    document.getElementById("continue").style.display = 'none';
+    document.getElementById("test2").style.display = 'block';
+}
+function Hide() {
+    document.getElementById("hide").style.display = 'none';
+    document.getElementById("test1").style.display = 'block';
+    document.getElementById("true").style.border = '2px solid rgb(24, 50, 218)';
+    document.getElementById("false1").style.border = '2px solid rgb(162, 10, 233)';
+    document.getElementById("false2").style.border = '2px solid rgb(10, 214, 233) ';
+    document.getElementById("false3").style.border = '2px solid rgb(236, 21, 226)';
+    
+    document.getElementById("retry").style.display = 'none';
+
+    document.getElementById("true1").style.border = '2px solid rgb(24, 50, 218)';
+    document.getElementById("false4").style.border = '2px solid rgb(10, 214, 233)';
+    document.getElementById("false5").style.border = '2px solid rgb(162, 10, 233) ';
+    document.getElementById("false6").style.border = '2px solid rgb(236, 21, 226)';
+
+    document.getElementById("true2").style.border = '2px solid rgb(236, 21, 226)';
+    document.getElementById("false7").style.border = '2px solid rgb(10, 214, 233)';
+    document.getElementById("false8").style.border = '2px solid rgb(162, 10, 233) ';
+    document.getElementById("false9").style.border = '2px solid rgb(24, 50, 218)';
+
+    document.getElementById("true3").style.border = '2px solid rgb(162, 10, 233)';
+    document.getElementById("false10").style.border = '2px solid rgb(10, 214, 233)';
+    document.getElementById("false11").style.border = '2px solid rgb(236, 21, 226) ';
+    document.getElementById("false12").style.border = '2px solid rgb(24, 50, 218)';
+
+    document.getElementById("true4").style.border = ' 2px solid rgb(24, 50, 218)';
+    document.getElementById("false13").style.border = '2px solid rgb(10, 214, 233)';
+    document.getElementById("false14").style.border = '2px solid rgb(162, 10, 233) ';
+    document.getElementById("false15").style.border = '2px solid rgb(24, 50, 218)';
+}
+function dung() {
+    alert("chúc mừng bạn đúng rồi!");
+    document.getElementById("false1").style.border = '2px solid red';
+    document.getElementById("false2").style.border = '2px solid red';
+    document.getElementById("false3").style.border = '2px solid red';
+    document.getElementById("true").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'none';
+    document.getElementById("continue").style.display = 'block';
+}
+    function sai() {
+    alert("Sai rồi! Hãy học nghiêm túc lại");
+    document.getElementById("false1").style.border = '2px solid red';
+    document.getElementById("false2").style.border = '2px solid red';
+    document.getElementById("false3").style.border = '2px solid red';
+    document.getElementById("true").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'block';
+    document.getElementById("next").style.display = 'none';
+
+}
+function dung1() {
+    alert("chúc mừng bạn đúng rồi!");
+    document.getElementById("false4").style.border = '2px solid red';
+    document.getElementById("false5").style.border = '2px solid red';
+    document.getElementById("false6").style.border = '2px solid red';
+    document.getElementById("true1").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'none';
+    document.getElementById("continue1").style.display = 'block';
+}
+    function sai1() {
+    alert("Sai rồi! Hãy học nghiêm túc lại");
+    document.getElementById("false4").style.border = '2px solid red';
+    document.getElementById("false5").style.border = '2px solid red';
+    document.getElementById("false6").style.border = '2px solid red';
+    document.getElementById("true1").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'block';
+    document.getElementById("continue1").style.display = 'none';
+
+}
+function dung2() {
+    alert("chúc mừng bạn đúng rồi!");
+    document.getElementById("false7").style.border = '2px solid red';
+    document.getElementById("false8").style.border = '2px solid red';
+    document.getElementById("false9").style.border = '2px solid red';
+    document.getElementById("true2").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'none';
+    document.getElementById("continue2").style.display = 'block';
+}
+    function sai2() {
+    alert("Sai rồi! Hãy học nghiêm túc lại");
+    document.getElementById("false7").style.border = '2px solid red';
+    document.getElementById("false8").style.border = '2px solid red';
+    document.getElementById("false9").style.border = '2px solid red';
+    document.getElementById("true2").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'block';
+    document.getElementById("continue2").style.display = 'none';
+
+}
+function dung3() {
+    alert("chúc mừng bạn đúng rồi!");
+    document.getElementById("false10").style.border = '2px solid red';
+    document.getElementById("false11").style.border = '2px solid red';
+    document.getElementById("false12").style.border = '2px solid red';
+    document.getElementById("true3").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'none';
+    document.getElementById("continue3").style.display = 'block';
+}
+    function sai3() {
+    alert("Sai rồi! Hãy học nghiêm túc lại");
+    document.getElementById("false10").style.border = '2px solid red';
+    document.getElementById("false11").style.border = '2px solid red';
+    document.getElementById("false12").style.border = '2px solid red';
+    document.getElementById("true3").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'block';
+    document.getElementById("continue3").style.display = 'none';
+
+}
+function dung4() {
+    alert("chúc mừng bạn đúng rồi!");
+    document.getElementById("false13").style.border = '2px solid red';
+    document.getElementById("false14").style.border = '2px solid red';
+    document.getElementById("false15").style.border = '2px solid red';
+    document.getElementById("true4").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'none';
+    document.getElementById("continue4").style.display = 'block';
+}
+    function sai4() {
+    alert("Sai rồi! Hãy học nghiêm túc lại");
+    document.getElementById("false13").style.border = '2px solid red';
+    document.getElementById("false14").style.border = '2px solid red';
+    document.getElementById("false15").style.border = '2px solid red';
+    document.getElementById("true4").style.border = '2px solid yellow';
+    document.getElementById("retry").style.display = 'block';
+    document.getElementById("continue4").style.display = 'none';
+
+}
+function next21() {
+    document.getElementById("test2").style.display = 'none';
+    document.getElementById("continue1").style.display = 'none';
+    document.getElementById("test3").style.display = 'block';
+}
+function retry() {
+    document.getElementById("true").style.border = '2px solid rgb(24, 50, 218)';
+    document.getElementById("false1").style.border = '2px solid rgb(162, 10, 233)';
+    document.getElementById("false2").style.border = '2px solid rgb(10, 214, 233) ';
+    document.getElementById("false3").style.border = '2px solid rgb(236, 21, 226)';
+    
+    document.getElementById("retry").style.display = 'none';
+
+    document.getElementById("true1").style.border = '2px solid rgb(24, 50, 218)';
+    document.getElementById("false4").style.border = '2px solid rgb(10, 214, 233)';
+    document.getElementById("false5").style.border = '2px solid rgb(162, 10, 233) ';
+    document.getElementById("false6").style.border = '2px solid rgb(236, 21, 226)';
+
+    document.getElementById("true2").style.border = '2px solid rgb(236, 21, 226)';
+    document.getElementById("false7").style.border = '2px solid rgb(10, 214, 233)';
+    document.getElementById("false8").style.border = '2px solid rgb(162, 10, 233) ';
+    document.getElementById("false9").style.border = '2px solid rgb(24, 50, 218)';
+
+    document.getElementById("true3").style.border = '2px solid rgb(162, 10, 233)';
+    document.getElementById("false10").style.border = '2px solid rgb(10, 214, 233)';
+    document.getElementById("false11").style.border = '2px solid rgb(236, 21, 226) ';
+    document.getElementById("false12").style.border = '2px solid rgb(24, 50, 218)';
+
+    document.getElementById("true4").style.border = ' 2px solid rgb(24, 50, 218)';
+    document.getElementById("false13").style.border = '2px solid rgb(10, 214, 233)';
+    document.getElementById("false14").style.border = '2px solid rgb(162, 10, 233) ';
+    document.getElementById("false15").style.border = '2px solid rgb(24, 50, 218)';
+}
+function next22() {
+    document.getElementById("test3").style.display = 'none';
+    document.getElementById("continue2").style.display = 'none';
+    document.getElementById("test4").style.display = 'block';
+}
+function next23() {
+    document.getElementById("test4").style.display = 'none';
+    document.getElementById("continue3").style.display = 'none';
+    document.getElementById("test5").style.display = 'block';
+}
+function next24() {
+    document.getElementById("test5").style.display = 'none';
+    document.getElementById("continue4").style.display = 'none';
+    document.getElementById("Finish").style.display = 'inline';
+    document.getElementById("finish").style.display = 'block';
+
+}
+function finish() {
+    document.getElementById("finish").style.display = 'none';
+    document.getElementById("Finish").style.display = 'none';
+    document.getElementById("hide").style.display = 'block';
+}
+</script>
+    </head>
+    <div  id="hide">
+    <div class="begin rung" >
+    <h1> chào mừng bạn đến với project học tiếng anh</h1></div>
+    <div class="image"><img class="logo" src="/image/logo.png"></div>
+    <div class="alight-button">
+        <input type="button" value="Bắt đầu" class="button-27" onclick="Hide()" >
+    </div>
+    </div>
+    <div id="test1" class="test1 image">
+        <img class="test" src="/image/lion.png">
+       <div class="Padding">
+         <input type="button" value="Lion" class="button-59 box1" onclick="dung()" id="true" ></imput>
+         <input type="button" value="Horse" class="button-59 box2" onclick="sai()" id="false1" ></imput>
+         <input type="button" value="Fox" class="button-59 box3" onclick="sai()" id="false2"></imput>
+         <input type="button" value="Ant" class="button-59 box4" onclick="sai()" id="false3" ></imput>
+        
+        </div>
+  
+    </div>
+
+    <div class="next" id="continue">
+        <input type="button" value="Tiếp tục" class="retry" onclick="next1()" id="next" ></imput> 
+    </div>
+    <div id="test2" class="test1 image">
+        <img class="test" src="/image/spoon.png">
+       <div class="Padding">
+         <input type="button" value="glass" class="button-59 box2" onclick="sai1()" id="false4" ></imput>
+         <input type="button" value="car" class="button-59 box3" onclick="sai1()" id="false5"></imput>
+         <input type="button" value="bin" class="button-59 box4" onclick="sai1()" id="false6" ></imput>
+         <input type="button" value="Spoon" class="button-59 box1" onclick="dung1()" id="true1" ></imput>
+        </div>
+        <div class="next" id="continue1">
+            <input type="button" value="Tiếp tục" class="retry" onclick="next21()" id="next2" ></imput> 
+        </div>
+    </div>
+    <div id="test3" class="test1 image">
+        <img class="test" src="/image/chair.png">
+       <div class="Padding">
+         <input type="button" value="Table" class="button-59 box2" onclick="sai2()" id="false7" ></imput>
+         <input type="button" value="Cloth" class="button-59 box3" onclick="sai2()" id="false8"></imput>
+         <input type="button" value="Chair" class="button-59 box4" onclick="dung2()" id="true2" ></imput>
+         <input type="button" value="Duolingo" class="button-59 box1" onclick="sai1()" id="false9" ></imput>
+        </div>
+        <div class="next" id="continue2">
+            <input type="button" value="Tiếp tục" class="retry" onclick="next22()" id="next2" ></imput> 
+        </div>
+    </div>
+    <div id="test4" class="test1 image">
+        <img class="test" src="/image/pillow.png">
+       <div class="Padding">
+         <input type="button" value="Table Cloth" class="button-59 box2" onclick="sai3()" id="false10" ></imput>
+         <input type="button" value="Pillow" class="button-59 box3" onclick="dung3()" id="true3"></imput>
+         <input type="button" value="Mattress" class="button-59 box4" onclick="sai3()" id="false11" ></imput>
+         <input type="button" value="Pigeon" class="button-59 box1" onclick="sai3()" id="false12" ></imput>
+        </div>
+        <div class="next" id="continue3">
+            <input type="button" value="Tiếp tục" class="retry" onclick="next23()" id="next2" ></imput> 
+        </div>
+    </div>
+    <div id="test5" class="test1 image">
+        <img class="test" src="/image/Pen.png">
+       <div class="Padding">
+         <input type="button" value="eraser" class="button-59 box2" onclick="sai4()" id="false13" ></imput>
+         <input type="button" value="ruler" class="button-59 box3" onclick="sai4()" id="false14"></imput>
+         <input type="button" value="Pencil" class="button-59 box4" onclick="sai4()" id="false15" ></imput>
+         <input type="button" value="Pen" class="button-59 box1" onclick="dung4()" id="true4" ></imput>
+        </div>
+        <div class="next" id="continue4">
+            <input type="button" value="Tiếp tục" class="retry" onclick="next24()" id="next2" ></imput> 
+        </div>
+    </div>
+
+    <div id="finish" class="test1 image">
+        <div class="title"><h1> chúc mừng bạn đã hoàn thành bài học! Cố gắng lên nhé 1 chút nữa thôi!</h1></div>
+        <div class="image"><img class="logo" src="/image/duolingo.png"></div>
+        <div class="alight-button">
+            <input type="button" value="Học lại" class="button-27" onclick="finish()" id="Finish" >
+        </div>
+    </div>
+    <div class="image retrydiv" id="retry">
+
+        <input type="button" value="làm lại" class="retry" onclick="retry()" id="retry" ></imput>
+    </div>  
+</html> 
